@@ -17,8 +17,9 @@ body {
 }
 
 .cassette-icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   animation: spin 5s linear infinite;
 }
 
@@ -161,11 +162,23 @@ audio {
   height: auto;
 }
 
+.thumb {
+  width: 220px;
+  height: 200px;
+  clip-path: path("M 100 30 C 100 -20, 0 -20, 0 50 C 0 90, 100 150, 100 180 C 100 150, 200 90, 200 50 C 200 -20, 100 -20, 100 30 Z");
+  overflow: hidden;
+}
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .six .hat {
   position: absolute;
   width: 80px;
-  top: -35px;
-  left: 41.5%;
+  top: -65px;
+  margin-left: 10vh;
   /* transform: scale(0.1); */
 }
 
@@ -274,7 +287,8 @@ audio {
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
-    left: 40%;
+    left: 22%;
+    margin-top: 14%;
   }
 }
 

@@ -108,7 +108,7 @@ const animationTimeline = () => {
     })
     .staggerTo(
       ".hbd-chatbox span",
-      0.5,
+      0.8,
       {
         visibility: "visible"
       },
@@ -197,7 +197,7 @@ const animationTimeline = () => {
     )
     .staggerFromTo(
       ".baloons img",
-      2.5,
+      8,
       {
         opacity: 0.9,
         y: 1400
