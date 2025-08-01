@@ -190,6 +190,11 @@ audio {
   }
 }
 
+@media (max-width: 400px){
+  .wish h5 {
+  font-size: 1rem;
+}
+}
 .baloons img {
   display: inline-block;
   position: absolute;
